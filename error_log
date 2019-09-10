@@ -1,0 +1,4 @@
+[17-Sep-2018 22:53:40 UTC] PHP Warning:  strpos(): Empty needle in /home2/eccomxor/public_html/wp-includes/functions.php on line 4338
+[17-Sep-2018 22:53:41 UTC] PHP Warning:  strpos(): Empty needle in /home2/eccomxor/public_html/wp-includes/functions.php on line 4338
+[17-Sep-2018 22:53:41 UTC] mojo_plugin_activated
+[17-Sep-2018 22:54:26 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'wp_schedule_delete_old_privacy_export_files' not found or invalid function name in /home2/eccomxor/public_html/wp-includes/class-wp-hook.php on line 286

@@ -2,168 +2,296 @@
 <html lang="en">
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SaMX</title>
+    <title>ECCO</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
+    <!-- Fuentes predeterminadas -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=DIN+Condensed+Bold' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-    <!-- Custom styles for this template -->
+    <!-- Estilos y template -->
     <link href="css/agency.min.css" rel="stylesheet">
 
   </head>
 
   <body id="page-top">
 
-    <!-- Navigation -->
+    <!-- Menú de Navegación -->
+    <style>
+      .dropdownNav {
+          position: relative;
+          display: inline-block;
+      }
+
+      .dropdownNav-content {
+          display: none;
+          position: absolute;
+          background-color: #ffffff;
+          min-width: 160px;
+          box-shadow: 5px 5px #e12217;
+          padding: 18px;
+          z-index: 1;
+          font-size: 14px;
+          font-weight: 500;
+          font-family: 'Helvetica Neue';
+          text-transform: uppercase;
+          border-radius: 3px 3px 3px 3px;
+      }
+
+      .dropdownNav:hover .dropdownNav-content {
+          display: block;
+      }
+    </style>
+
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">SaMX</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <img src="img/logoecco.png" width="85" height="40">
+        </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
+
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">The Problem</a>
+              <div class="dropdownNav">
+                  <a class="nav-link js-scroll-trigger btn dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Problemática
+                  </a>
+                  <div class="dropdownNav-content" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdownNav-item" href="#problema">Problema</a>
+                    <a class="dropdownNav-item" href="#solucion">Solución</a>
+                  </div>
+                </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Experiences</a>
+              <div class="dropdownNav">
+                  <a class="nav-link js-scroll-trigger btn dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Apoyo
+                  </a>
+                  <div class="dropdownNav-content" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdownNav-item" href="#consejos">Consejos</a>
+                    <a class="dropdownNav-item" href="#denuncias">Denuncias</a>
+                    <a class="dropdownNav-item" href="instancias.html">Instancias</a>
+                  </div>
+                </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Solution</a>
+              <a class="nav-link js-scroll-trigger" href="sumate.html">Súmate</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#mockups">Mockups</a>
+              <a class="nav-link js-scroll-trigger" href="quienessomos.html">¿Quiénes somos?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+              <a class="nav-link js-scroll-trigger" href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#opina">Opina</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Header -->
+    <!-- Encabezado -->
     <header class="masthead">
-      <div class="container">
-        <div class="intro-text">
-          <div class="intro-lead-in">Mexico City's Subway System</div>
-          <div class="intro-heading">Crowded urban space</div>
-          <a class="btn btn-xl js-scroll-trigger" href="#services">Tell Me More</a>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active ">
+            <img class="d-block w-100" src="img/slideshow/slide1.png" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="container">
+                <div class="intro-text">
+                  <div class="intro-lead-in"></div>
+                  <div class="intro-heading">Emprendedores contra la corrupción</div>
+                  <a class="btn btn-xl js-scroll-trigger" href="#problema">¿Quieres saber más?</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/slideshow/slide2.png" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="container">
+                <div class="intro-text">
+                  <div class="intro-heading">¿Víctima de un acto de corrupción?</div>
+                  <div class="intro-lead-in">Conoce las instancias que pueden ayudarte</div>
+                  <a class="btn btn-xl js-scroll-trigger" href="instancias.html">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/slideshow/slide3.png" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="container">
+                <div class="intro-text">
+                  <div class="intro-heading">Súmate al proyecto</div>
+                  <div class="intro-lead-in">Conoce la experiencia de más mexicanos que están haciendo ECCO</div>
+                  <a class="btn btn-xl js-scroll-trigger" href="sumate.html">Súmate</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/slideshow/slide4.png" alt="Fourth slide">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="container">
+                <div class="intro-text">
+                  <div class="intro-lead-in">Tú opinión es importante</div>
+                  <div class="intro-heading">Ayúdanos a mejorar</div>
+                  <a class="btn btn-xl js-scroll-trigger" href="#opina">Responder</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </header>
 
-    <!-- Services -->
-    <section id="services">
+    <!-- Problema -->
+    <section id="problema">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">The problem</h2>
-            <h3 class="section-subheading text-muted">Mexico City’s subway system is one of the biggest in the world, but also one of the most crowded and with a lot of logistic issues about the inflow and outflow of users. This causes delays in the expected departures of the subways, causing accumulation of people waiting for the subway and making it not enough to satisfy the needs of the population, among other problems that users suffer day by day like being stuck in the stations for technical problems, etc. </h3>
+            <h2 class="section-heading">Problema</h2>
+            <h3 class="section-subheading text-muted">
+              Las MiPyMEs en México enfrentan diversas problemáticas que obstaculizan su desempeño, entre ellas: las prácticas informales, las altas tasas de impuestos, el bajo nivel de acceso a financiamiento, el crimen y la delincuencia, las cargas administrativas y la falta de información. Se considera a la corrupción como el factor más problemático para hacer negocios en México, posiblemente por el efecto negativo que tiene en otros factores del desarrollo, como la competencia de mercado, la eficacia de las instituciones democráticas, el ambiente de negocios o la formación de capital humano  (Observatorio Nacional del Emprendedor, 2015)</br>
+              <br>La corrupción no solo reduce la rentabilidad de las empresas, sino que aumenta la incertidumbre y vuelve ineficientes los negocios. La corrupción afecta a los emprendimientos en dos momentos cruciales: en la apertura y durante el crecimiento de las empresas.</br>
+              Los tres trámites donde más MiPyMEs enfrentan corrupción es la tramitación y pago de licencias y permisos en el municipio, seguido por el permiso de uso de suelo y la instalación, reconexión y pago de la luz.
+            </h3>
           </div>
         </div>
         <div class="row text-center">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Client and users</h4>
-            <p class="text-muted">Our client is Sistema de Transporte Colectivo (STC), a public-decentralized organism that owns and operates the Mexico City’s Subway System.
-            <br>Our users group is composed by CDMX’s citizens, tourists and people traveling for job, educational or recreational purposes.</br> </p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Why now</h4>
-            <p class="text-muted">Government has the disposition to modernize its services.
-              <br> There's a 61% of penetration of mobile internet in the market which makes able to create a solution connected to internet, also all the subway stations had been provided with 4G LTE and Wi-Fi technologies.
+          <div class="col-md-12">
+            <h4 class="service-heading">¿Qué es MiPyMEs?</h4>
+            <p class="text-muted">MiPyMEs es un término distintivo de empresas con características y dimensiones específicas.</br>
+              </br>
+              <img src="img/problema/MiPyMEs.png" width="90%" height="90%">
+              </br>
+            </p>
+            </br>
+            <p class="text-muted">Las MiPyMEs juegan un papel relevante dentro del ambiente empresarial en México.</br>
+              </br>
+              <img src="img/problema/porcentajeMP.png" width="75%" height="75%">
+              </br>
             </p>
           </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Values missing</h4>
-            <p class="text-muted">Users do not have information about the status of subway system, nor the chance to purchase and schedule their rides in advance to get an easy access to the infrastructure.
-              <br> Tackling these insights we found an opportunity to create a solution and improve the lives of people.</br></p>
+        </div>
+        </br>
+        </br>
+        </br>
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h4 class="service-heading">Índices de percepción</h4>
+            <p class="text-muted"></br>
+                <img src="img/problema/quotes.png" width="100%" height="105%">
+            </p>
+            <p class="text-muted"></br>
+                <img src="img/problema/porcentajes.png"  width="95%" height="95%">
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
+    <!-- Solución -->
+    <section id="solucion">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Experiences</h2>
-            <h3 class="section-subheading text-muted">Opinions of users and experts.</h3>
+            <h2 class="section-heading">Propuestas de solución</h2>
+            <h3 class="section-subheading text-muted">Un enfoque en políticas públicas que favorezcan el emprendimiento y disminuyan las fricciones a las cuales se enfrenta un emprendedor, tiene un impacto positivo sobre los niveles de corrupción gubernamental (Instituto Mexicano para la Competitividad. (2015)
+            </h3>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-5 col-sm-7 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/dani.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Daniel Méndez</h4>
-              <p class="text-muted">User</p>
-            </div>
-          </div>
-          <div class="col-md-2 col-sm-4 portfolio-item">  </div>
-          <div class="col-md-5 col-sm-7 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/tania.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Tania Cano</h4>
-              <p class="text-muted">Expert</p>
-            </div>
-          </div>
+        <div class="row text-center">
+          <div class="col-md-16">
+            <img src="img/problema/soluciones.jpg" width="100%" height="100%">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About -->
-    <section id="about">
+
+    <!-- Consejos -->
+    <section class="bg-light" id="consejos">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading">Consejos prácticos</h2>
+              <h3 class="section-subheading text-muted"> Estos son algunos consejos que pueden servirte si te encuentras en una situación similar.</h3>
+            </div>
+          </div>
+          <div class="row text-left">
+            <div class="col-md-4">
+              <img src="img/consejos/logo_consejos.png" width="65%" height="95%">
+            </div>
+            <div class="col-md-8">
+              <h4 class="service-heading">Ventanilla Única Nacional</h4>
+              <p class="text-muted">Como parte de las iniciativas de gobierno, ciertos trámites necesarios para el inicio y/o crecimiento de un negocio, se pueden hacer vía internet, en <a href="https://www.gob.mx/tramites">la página del gobierno</a>. Te ofrece información del lugar donde se debe realizar el trámite, en caso de querer hacerlo presencial, los documentos necesarios, el costo del trámite y teléfonos de atención.
+              </br>
+                <br>En esta se pueden realizar trámites como:</br>
+                <ul>
+                    Solicitud de registro de marca</br>
+                    Permisos sanitarios</br>
+                    Permiso para la compra, venta, almacenamiento y/o consumo</br>
+                    Cancelación o suspensión de permisos</br>
+                    Alta patronal e inscripción en el seguro</br>
+                    Acreditación de requisitos</br>
+                    Aclaración de movimientos</br>
+                    Actualización de registro</br>
+                    Aprobación de pólizas, ubicación, requisitos</br>
+                    Licencias de uso o franquicia, entre otros</br>
+                </ul>
+              </p>
+              </br>
+              <h4 class="service-heading">Denuncias</h4>
+              <p class="text-muted">Si quieres presentar una queja o denuncia relacionada con irregularidades cometidas por servidores públicos federales en el desempeño de sus funciones, puedes dirigirte al Órgano Interno de Control de la dependencia o entidad a la que estén adscritos.
+              </br>
+                <br>Si la queja o denuncia es en contra de algún servidor público adscrito a la Secretaría la Función Pública, o en contra de los titulares de los Órganos Internos de Control, será la Contraloría Interna de la Secretaría de la Función Pública quién atienda esas quejas y denuncias.</br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    <!-- Denuncias -->
+    <section id="denuncias">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Solution</h2>
-            <h3 class="section-subheading text-muted">How the problem will be solved</h3>
+            <h2 class="section-heading">Proceso de denuncia</h2>
+            <h3 class="section-subheading text-muted">¿Fuiste víctima o presenciaste algún acto de corrupción por parte de un servidor público?</h3>
           </div>
         </div>
         <div class="row">
@@ -171,66 +299,85 @@
             <ul class="timeline">
               <li>
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+                  <img class="rounded-circle img-fluid" src="img/about/1.png">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>Statistics</h4>
-                    <h4 class="subheading">How long is the problem</h4>
+                    <h4 class="subheading">Identifica el tipo de acto de corrupción</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Mexico City's subway system counts with 12 lines and 195 stations.
-                    <br>This represents 226 kilometers of distance, same as going from Guadalajara to Tepic.</br></p>
+                    <p class="text-muted">
+                      Los más comunes son:</br>
+                    <ul>
+                      Soborno </br>
+                      Desvío de recursos</br>
+                      Tráfico de influencias</br>
+                      Nepotismo</br>
+                      Colusión</br>
+                    </ul>
+                    </p>
                   </div>
                 </div>
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                  <img class="rounded-circle img-fluid" src="img/about/2.png">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>Users</h4>
-                    <h4 class="subheading">The main reason</h4>
+                    <h4 class="subheading">Identifica a qué nivel de gobierno pertenece la dependencia</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Daily 4,6 million of people use the Mexico City's subway system to move around the metropolitan area. The penetration of smartphones in Mexico City is around 75%, this represents that we can expect at least 3,75 million potential users of a mobile solution.</p>
+                    <p class="text-muted">
+                      <ul>
+                        Federal</br>
+                        Estatal</br>
+                        Local</br>
+                      </ul>
+                      <p class="text-muted">De acuerdo a lo anterior identifica el órgano que se encarga de sancionar el acto, mediante el directorio disponible en nuestra sección de <a href="instancias.html">instancias</a>.</p>
+                    </p>
                   </div>
                 </div>
               </li>
               <li>
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+                  <img class="rounded-circle img-fluid" src="img/about/3.png" >
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>Cost of operations</h4>
-                    <h4 class="subheading">How much can we save if we apply a mobile app</h4>
+                    <h4 class="subheading">Reunir los requisitos necesarios para denunciar </h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Daily operations of Mexico City’s subway system cost $917’000’000 MXN every year. With a project that makes the use of subway system we can expect at least a social value return of 15% after inflation, so the expected return after one year of operation of an app will be around 19.99% of the total cost of subway’s operation.</p>
+                    <p class="text-muted">(Revisar los solicitados por el órgano ante el que se efectúa la denuncia).</p>
+                    <ul>
+                      1. Los datos del quejoso o denunciante en donde pueda ser localizado (opcional).</br>
+                      2. Datos de identificación del servidor público involucrado, de contar con ellos.</br>
+                      3. Narración de los hechos (indicando cómo, cuándo y dónde sucedieron los acontecimientos).</br>
+                      4. Proceso para llevarla a cabo.</br>
+                      5. En su caso, las pruebas que pueda aportar.</br>
+                    </ul>
                   </div>
                 </div>
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+                  <img class="rounded-circle img-fluid" src="img/about/4.png">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>Big data analysis</h4>
-                    <h4 class="subheading">A future benefit</h4>
+                    <h4 class="subheading">Seguimiento</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">According to the research, through the data analysis that a mobility app can provide, there are so many opportunities to perform improvements in the operations of the subway system.</p>
+                    <p class="text-muted">Una vez iniciado el proceso obtener (en su caso) el folio para dar seguimiento y esperar resultados.</p>
                   </div>
                 </div>
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <h4>Let's
-                    <br>make a
-                    <br>Change!</h4>
+                  <h4>¡Házte
+                    <br>Escuchar!
+                    <br>Denuncia
+                  </h4>
                 </div>
               </li>
             </ul>
@@ -239,91 +386,29 @@
       </div>
     </section>
 
-    <!-- Mockups -->
-    <section class="bg-light" id="mockups">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Mockups</h2>
-            <h3 class="section-subheading text-muted">Sketched possible solutions</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
-              <img class="img-fluid" src="img/portfolio/mock1.jpg" alt="">
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-              <img class="img-fluid" src="img/portfolio/mock2.jpg" alt="">
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-              <img class="img-fluid" src="img/portfolio/mock3.jpg" alt="">
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <br></br>
-            <br></br>
-              <a class="btn btn-xl"  href="ebovio.github.io/pdfs/SaMX.pdf" download="SaMX.pdf"><center>Download business plan</center></a>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Team -->
-    <section id="team">
+    <!-- Opina -->
+    <section class="bg-light" id="opina">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Our Team</h2>
-            <h3 class="section-subheading text-muted">Compromised in finding a solution that can impact the lives of the users of CDMX's Subway System</h3>
+            <h2 class="section-heading">Queremos escuchar tu opinión</h2>
+            <h3 class="section-subheading text-muted">ECCO es un proyecto creado para ti por ciudadanos como tú, tu opinión es muy importante para nosotros.</h3>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTxKARXOuENYmB8GV2DbWl_Ww9RnbU6La3Z9TT6ryByI00tw/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Cargando...</iframe>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-4">
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-              <h4>Enrique Anaya Bovio</h4>
-              <p class="text-muted">Developer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4">
-          </div>
-        </div>
-        <div class="row">
-        </div>
+        </br>
       </div>
     </section>
 
 
-    <!-- Contact -->
+    <!-- Contacto -->
     <section id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Contact Us</h2>
-            <h3 class="section-subheading text-muted">Feel free to send your feedback and opinion about our project</h3>
+            <h2 class="section-heading">Contáctanos</h2>
+            <h3 class="section-subheading text-muted">Siéntete libre de enviarnos tus dudas, sugerencias u opiniones acerca de nuestro proyecto</h3>
           </div>
         </div>
         <div class="row">
@@ -332,28 +417,28 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required data-validation-required-message="Please enter your name.">
+                    <input class="form-control" id="name" type="text" placeholder="Nombre *" required data-validation-required-message="Nombre">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="email" type="email" placeholder="Your Email *" required data-validation-required-message="Please enter your email address.">
+                    <input class="form-control" id="email" type="email" placeholder="Email *" required data-validation-required-message="Correo electrónico">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required data-validation-required-message="Please enter your phone number.">
+                    <input class="form-control" id="phone" type="tel" placeholder="Teléfono *" required data-validation-required-message="Número de teléfono">
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <textarea class="form-control" id="message" placeholder="Your Message *" required data-validation-required-message="Please enter a message."></textarea>
+                    <textarea class="form-control" id="message" placeholder="Tu mensaje *" required data-validation-required-message="Escribe tu mensaje"></textarea>
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
                   <div id="success"></div>
-                  <button id="sendMessageButton" class="btn btn-xl" type="submit">Send Message</button>
+                  <button href="mailto:e.bovio08@gmail.com" id="sendMessageButton" class="btn btn-xl" type="submit" >Enviar mensaje</button>
                 </div>
               </div>
             </form>
@@ -362,28 +447,34 @@
       </div>
     </section>
 
+
     <!-- Footer -->
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Your Website 2017</span>
+            <span class="copyright">Copyright &copy; ECCO 2018</span>
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://twitter.com/mxECCO">
                   <i class="fa fa-twitter"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.linkedin.com/company/mxecco">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/mxecco">
                   <i class="fa fa-facebook"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-linkedin"></i>
+                <a href="https://www.instagram.com/mx.ecco">
+                  <i class="fa fa-instagram"></i>
                 </a>
               </li>
             </ul>
@@ -391,80 +482,13 @@
           <div class="col-md-4">
             <ul class="list-inline quicklinks">
               <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
+                <a href="pdfs/AvisodePrivacidad_ECCO.pdf" download="AvisodePrivacidad_ECCO.pdf">Aviso de privacidad</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
-
-    <!-- Portfolio Modals -->
-
-    <!-- Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" width="550" height="750">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2>Daniel Méndez</h2>
-                  <p class="item-intro text-muted">Student</p>
-                  <p>It is a fact that the metro is a very clear sign of corruption in our country. There have been increases in rates with the promise to improve facilities and service, but have remained only in promises that do not seem to have a near future to meet.
-                    <br>On the contrary; The facilities and the service over time become unusable and do not cater to the number of people who use it. As an example, a route that normally takes 30 minutes in a peak hour can become a martyr of 2 hours (or more).
-                    <br>The model we have is very good, but lack of maintenance and incorrect ways of operating system make the desired results unobtainable.</br>
-                  </p>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2>Tania Cano</h2>
-                  <p class="item-intro text-muted">Architect</p>
-                  <p>Mexico's city subway system was revolutionary in the past, having one of the largest metros in the world was a hope for the country. Mexico used to be compared with another big cities and the expectatives of growth were high, unfortunately the lack of maintance have kept the project stuck. <br> Compared to other metro systems like the swiss or the spanish, our metro system has no technology implementation.
-                    <br>I believe the metro needs to change some of its practices and provide a trusting service to the users. It is very difficult to recommend to a visitor to try the traumatic experience of moving by the subway.</br>
-                  </p>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
 
 
     <!-- Bootstrap core JavaScript -->
